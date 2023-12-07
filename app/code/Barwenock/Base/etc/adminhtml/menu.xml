@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Barwenock
+ * @copyright Copyright (c) Barwenock
+ * @package Magento 2 Base Package
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Barwenock_Base::menu" title="Barwenock" module="Barwenock_Base" translate="title" sortOrder="60"
+             resource="Barwenock_Base::menu"/>
+        <add id="Barwenock_Base::market" title="Barwenock Marketplace" module="Barwenock_Base" translate="title"
+             sortOrder="10" action="barwenock/marketplace/link" parent="Barwenock_Base::menu" target="_blank"
+             resource="Barwenock_Base::menu"/>
+    </menu>
+</config>

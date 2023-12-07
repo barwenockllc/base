@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Barwenock
+ * @copyright Copyright (c) Barwenock
+ * @package Magento 2 Base Package
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="barwenock" translate="label" sortOrder="300">
+            <label>Barwenock Extensions</label>
+        </tab>
+        <section id="barwenock" translate="label" type="text" sortOrder="80"
+                 showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Information</label>
+            <tab>barwenock</tab>
+            <resource>Barwenock_Core::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10"
+                   showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="menu" translate="label comment" type="select" sortOrder="30"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Barwenock Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>\Barwenock\Base\Model\Config\Backend\Menu</backend_model>
+                    <comment>If yes, the "Barwenock" menu will appear in the Magento 2 admin navigation</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

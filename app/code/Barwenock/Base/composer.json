@@ -1,0 +1,17 @@
+{
+    "name": "barwenock/base",
+    "description": "Barwenock Base",
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Barwenock\\Base\\": ""
+        }
+    }
+}
